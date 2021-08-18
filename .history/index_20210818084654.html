@@ -14,14 +14,13 @@
             <h1>Filmes</h1>
             <h2>Carrinho: {{cart.length}}</h2>
             <div v-for="(product,index) in products" :key="index">
-                <product-detail :product="product"></product-detail>
-                
+                <img :src="product.image" :alt="product.description"/>
                 <strong v-if="product.stars > 0">{{product.stars}}</strong>
                 <a href="#">Adicionar</a>
                 <a href="#" v-on:click.prevent="addProductInCart(product)">Remover</a>
             </div>
-           
-        </div><!--APP-->
+            
+        </div>
 
         <script src="https://unpkg.com/vue@next"></script>
         <script src="./app.js"></script>

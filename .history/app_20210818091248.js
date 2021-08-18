@@ -29,10 +29,8 @@ const myApp = {
 
 const productDetail = {
     template: `
-        <p>Sou um component que esta carregando as imagens</p>
-        <img :src="product.image" :alt="product.description"/>
+        <p>Sou um component {{exemple}}</p>
     `,
-    props:['product'],
     data(){
         return{
             exemple:123,

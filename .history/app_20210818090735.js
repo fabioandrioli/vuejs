@@ -29,10 +29,8 @@ const myApp = {
 
 const productDetail = {
     template: `
-        <p>Sou um component que esta carregando as imagens</p>
-        <img :src="product.image" :alt="product.description"/>
+        <p>Sou o detalhe do produto</p>
     `,
-    props:['product'],
     data(){
         return{
             exemple:123,
@@ -41,7 +39,5 @@ const productDetail = {
 }
 
 const app = Vue.createApp(myApp)
-
-app.component('product-detail',productDetail)
 
 app.mount("#app")

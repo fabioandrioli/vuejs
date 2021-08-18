@@ -14,7 +14,7 @@
             <h1>Filmes</h1>
             <h2>Carrinho: {{cart.length}}</h2>
             <div v-for="(product,index) in products" :key="index">
-                <product-detail :product="product"></product-detail>
+                <product-detail product="product"></product-detail>
                 
                 <strong v-if="product.stars > 0">{{product.stars}}</strong>
                 <a href="#">Adicionar</a>

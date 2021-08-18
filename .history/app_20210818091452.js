@@ -32,7 +32,6 @@ const productDetail = {
         <p>Sou um component que esta carregando as imagens</p>
         <img :src="product.image" :alt="product.description"/>
     `,
-    props:['product'],
     data(){
         return{
             exemple:123,

@@ -12,16 +12,13 @@
             <p>Aluno {{name}} {{lastName}}</p>
             <hr>
             <h1>Filmes</h1>
-            <h2>Carrinho: {{cart.length}}</h2>
-            <div v-for="(product,index) in products" :key="index">
-                <product-detail :product="product"></product-detail>
-                
-                <strong v-if="product.stars > 0">{{product.stars}}</strong>
-                <a href="#">Adicionar</a>
-                <a href="#" v-on:click.prevent="addProductInCart(product)">Remover</a>
-            </div>
-           
-        </div><!--APP-->
+
+            <img :src="product.image" :alt="product.description"/>
+            <strong v-show="product.street > 0">{{product.stars}}</strong>
+
+            <img :src="productTwo.image" :alt="productTwo.description"/>
+            <strong v-show="productTwo > 0">{{productTwo.stars}}</strong>
+        </div>
 
         <script src="https://unpkg.com/vue@next"></script>
         <script src="./app.js"></script>
