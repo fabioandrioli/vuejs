@@ -25,5 +25,9 @@ const myApp = {
     }
 }
 
+
 const app = Vue.createApp(myApp)
 
+app.component('product-detail',productDetail)
+
+app.mount("#app")
