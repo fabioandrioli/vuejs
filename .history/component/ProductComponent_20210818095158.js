@@ -23,7 +23,6 @@ const productDetail = {
     methods:{
         addProductInCart(product){
             this.cart.push(product)
-            this.$emit('add-product-cart',product)
           
         }
     }

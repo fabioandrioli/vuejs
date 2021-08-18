@@ -3,15 +3,14 @@ const productDetail = {
     template: `
         <h2>Carrinho: {{cart.length}}</h2>
         <p>Sou um component que esta carregando as imagens</p>
-        <img :src="product.image" :alt="product.description"/>
+        <img  :alt="product.description"/>
         <a href="#" v-on:click.prevent="addProductInCart(product)">Adicionar</a>
     `,
     //props:['product'],
-    props:{
+    propos:{
         product:{
             type:Object,
             required:true,
-
         }
     },
     data(){
@@ -23,7 +22,6 @@ const productDetail = {
     methods:{
         addProductInCart(product){
             this.cart.push(product)
-            this.$emit('add-product-cart',product)
           
         }
     }

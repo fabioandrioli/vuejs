@@ -7,11 +7,10 @@ const productDetail = {
         <a href="#" v-on:click.prevent="addProductInCart(product)">Adicionar</a>
     `,
     //props:['product'],
-    props:{
+    propos:{
         product:{
             type:Object,
             required:true,
-
         }
     },
     data(){
@@ -23,8 +22,7 @@ const productDetail = {
     methods:{
         addProductInCart(product){
             this.cart.push(product)
-            this.$emit('add-product-cart',product)
-          
+           
         }
     }
 }

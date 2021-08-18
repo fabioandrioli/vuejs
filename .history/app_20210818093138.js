@@ -22,7 +22,7 @@ const myApp = {
         }
     },
     methods:{
-        addProductInCartClassFahther(product){
+        addProductInCart(product){
             this.cart.push(product)
         }
     }

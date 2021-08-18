@@ -12,9 +12,9 @@
             <p>Aluno {{name}} {{lastName}}</p>
             <hr>
             <h1>Filmes</h1>
-            <h2>Carrinho:{{cart.length}}</h2>
+            <h2>Carrinho:</h2>
             <div v-for="(product,index) in products" :key="index">
-                <product-detail :product="product" @add-product-cart=" addProductInCartClassFahther"></product-detail>
+                <product-detail :product="product"></product-detail>
                 
                 <strong v-if="product.stars > 0">{{product.stars}}</strong>
             </div>

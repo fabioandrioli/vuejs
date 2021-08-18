@@ -6,14 +6,7 @@ const productDetail = {
         <img :src="product.image" :alt="product.description"/>
         <a href="#" v-on:click.prevent="addProductInCart(product)">Adicionar</a>
     `,
-    //props:['product'],
-    props:{
-        product:{
-            type:Object,
-            required:true,
-
-        }
-    },
+    props:['product'],
     data(){
         return{
             exemple:123,
@@ -23,7 +16,6 @@ const productDetail = {
     methods:{
         addProductInCart(product){
             this.cart.push(product)
-            this.$emit('add-product-cart',product)
           
         }
     }
